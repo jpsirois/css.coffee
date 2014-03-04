@@ -10,7 +10,7 @@ CSS.deleteRule(CSSRuleIndex)
 CSS.replaceRule({rule:CSSRuleIndex, selector:selector, properties:properties})
 ###
 
-JSCSS =
+@JCSS =
   insertRule: (args) ->
     ss = document.styleSheets
     # Select the last Stylesheet
