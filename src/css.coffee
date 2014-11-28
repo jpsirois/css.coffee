@@ -17,7 +17,7 @@ CSS.replaceRule({rule:CSSRuleIndex, selector:selector, properties:properties})
     s = ss[ss.length - 1]
     if s.insertRule
       # Set the CSS Rule index to be the last of the last Stylesheet
-      ruleIndex = s.cssRules.length
+      ruleIndex = s.cssRules?.length || 0
       i = s.insertRule(args.selector + " {" + args.properties + "}", ruleIndex)
     else # Fallback for legacy browser
       i = s.addRule(args.selector, args.properties)
